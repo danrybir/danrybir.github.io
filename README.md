@@ -1,2 +1,1 @@
-# danrybir.github.io
-a
+i have become chair
