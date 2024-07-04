@@ -1,0 +1,128 @@
+<!-- https://asciiart.website/index.php?art=religion/christianity
+           |
+       \       /
+         .---.
+    '-.  |   |  .-'
+      ___|   |___
+ -=  [           ]  =-
+     `---.   .---'
+  __||__ |   | __||__
+  '-..-' |   | '-..-'
+    ||   |   |   ||
+    ||_.-|   |-,_||
+  .-"`   `"`'`   `"-.
+.'                   '.
+Reading this code is highly unrecommended
+and can result in a massive headache.
+The cross ASCII art is there to protect
+myself from making this abomination worse.
+If it ain't broken, don't fix it.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="danry bir">
+    <meta name="description" content="i am danry">
+    <meta name="keywords" content="danry, danry bir">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="danry bir">
+    <title>danry bir</title>
+    <style>
+        /* NOTE: I do not know what I was on either.
+                 No, I cannot share */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ececec;
+            perspective: 1000px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .chair {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+            animation: rotate 10s infinite linear;
+        }
+        .seat {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #6d3711;
+            transform: translateY(0px) rotateX(90deg);
+        }
+        .backrest {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #8b4513;
+            transform: translateX(-50px) translateY(-100px) rotateZ(90deg) translateZ(-50px);
+            transform-origin: bottom;
+        }
+        .leg {
+            position: absolute;
+            width: 10px;
+            height: 90px;
+            background-color: #8b4513;
+        }
+        .front-left {
+            transform: translate(90px, 50px) translateZ(-50px);
+        }
+        .front-right {
+            transform: translate(0px, 50px) translateZ(-50px);
+        }
+        .back-left {
+            transform: translate(90px, 50px) translateZ(50px);
+        }
+        .back-right {
+            transform: translate(0px, 50px) translateZ(50px);
+        }
+        .chair-text {
+            position: absolute;
+            text-align: center;
+            width: 100px;
+            transform: translate(0px, -25px) translateZ(-50px);
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            100% {
+                transform: rotateX(-360deg) rotateY(720deg) rotateZ(-360deg);
+            }
+            /* at least the animation looks cool */
+        }
+        p {
+            margin: 0;
+        }
+        .text {
+            transform: translate(100px);
+        }
+        .smol {
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chair">
+        <div class="seat"></div>
+        <div class="backrest"></div>
+        <div class="leg front-left"></div>
+        <div class="leg front-right"></div>
+        <div class="leg back-left"></div>
+        <div class="leg back-right"></div>
+        <p class="chair-text">i have become chair</p>
+    </div>
+    <div class="text">
+        <p>danry bir</p>
+        <a class="smol" href="https://github.com/danrybir">github</p>
+    </div>
+</body>
+</html>
