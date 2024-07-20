@@ -30,9 +30,28 @@ function updateColor() {
 function shutUp() {
     document.getElementById('bottom').outerHTML = '';
 };
+let zoom = 1;
+function changeZoom(n) {
+    zoom += n;
+    doTheZoom();
+};
+function setZoom(n) {
+    zoom = n;
+    doTheZoom();
+};
+function doTheZoom() {
+    zoom = Math.max(zoom, 0.1);
+    epic.style.fontSize = `calc(15ch * ${zoom})`;
+    epic.style.textShadow = `0 0 calc(45px * ${zoom}), 0 0 calc(90px * ${zoom}) #ffffff20,\
+                             0 0 calc(20px * ${zoom}) #28272b20, 0 0 calc(360px * ${zoom}),\
+                             0 0 calc(720px * ${zoom})`;
+};
+function setAlign(align) {
+    epic.style.textAlign = align;
+};
 window.addEventListener('DOMContentLoaded', () => {
     epic = document.getElementById('epic');
     epic.addEventListener('input', () => {
         updateColor();
     });
-})
+});
